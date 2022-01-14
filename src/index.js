@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
-import BotNav from './Componants/navbar';
+import App from './App';
+import BotNav from './Components/navbar';
 
 
 ReactDOM.render(
   <React.StrictMode>
+    <App />
     <BotNav />
   </React.StrictMode>,
   document.getElementById('root')
