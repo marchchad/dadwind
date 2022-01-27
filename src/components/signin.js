@@ -8,18 +8,18 @@ import Checkbox from '@mui/material/Checkbox';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Logo from './img/logo.png';
 
 
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        The Grill
+      <Link color="inherit" href="https://Dadwind.com/">
+        Dadwind
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -47,23 +47,22 @@ export default function SignIn() {
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
+            marginTop: 15,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <MapsHomeWorkIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
-            The Grill
-          </Typography>
+          <a href="/">
+          
+            <img src={Logo} />
+      
+          </a>
           <Box 
 
           component="form" 
           onSubmit={handleSubmit} 
-          noValidate sx={{ mt: 1 }}>
+          noValidate sx={{ mt: 15 }}>
             <TextField
               variant="outlined"
               color="secondary"
@@ -119,7 +118,7 @@ export default function SignIn() {
            
           </Box>
         </Box>
-        <Copyright sx={{ mt: 8, mb: 4 }} />
+        <Copyright sx={{ mt: 6 }} />
       </Container>
     </ThemeProvider>
   );
