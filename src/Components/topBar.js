@@ -27,7 +27,7 @@ export default function AccountMenu() {
     <React.Fragment>
       <Box sx={{ display: 'flex', alignItems: 'center',  justifyContent: "center", position: "fixed", backgroundColor:"white", width: "100%"}}>
           <a href="/home">
-        <Typography sx={{ marginLeft: "1em", minWidth: 100, textAlign: "left"}}><img style={{ height:"4em"}} src={Logo} /></Typography>
+        <Typography sx={{ marginLeft: "1em", minWidth: 100, textAlign: "left"}}><img style={{ height:"4em"}} alt='logo' src={Logo} /></Typography>
         </a>
         <Tooltip title="Account settings">
           <IconButton
