@@ -43,7 +43,7 @@ export default function SignIn() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
+      <Container component="main" maxWidth="xs" >
         <CssBaseline />
         <Box
           sx={{
@@ -53,16 +53,20 @@ export default function SignIn() {
             alignItems: 'center',
           }}
         >
-          <a href="/">
+          <a href="/" >
           
-            <img src={Logo} />
+            <img src={Logo}  />
       
           </a>
           <Box 
 
           component="form" 
           onSubmit={handleSubmit} 
-          noValidate sx={{ mt: 15 }}>
+          noValidate sx={{
+            width: '100%', // Fix IE 11 issue.
+            marginTop: 10,
+          
+          }}>
             <TextField
               variant="outlined"
               color="secondary"
@@ -93,24 +97,45 @@ export default function SignIn() {
             />
             <Button
             style={{
-                backgroundColor: "#2ACAEA"
+                backgroundColor: "#2ACAEA",
+                color: "white",
+                width: "100%",
+                marginTop: "10px",
+                marginBottom: "10px",
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+                borderRadius: "5px",
+                border: "none",
+                padding: "10px",
+                cursor: "pointer"
+                
             }}
               type="submit"
               fullWidth
               variant="contained"
               
-              sx={{ mt: 3, mb: 2 }}
+              sx={{ mt: 3, mb: 2, color: 'white', fontWeight: 'bold', fontSize: '1.5rem'}}
             >
               Sign In
             </Button>
             <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2">
+              <Grid item xs >
+                <Link href="#" variant="body2"
+                sx={{
+                  color: '#2ACAEA',
+                  fontWeight: 'bold',
+                  fontSize: '1rem'
+
+                }}>
                   Forgot password?
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link href="#" variant="body2" sx={{
+                  color: '#2ACAEA',
+                  fontWeight: 'bold',
+                  fontSize: '1rem'
+                }}>
                   {"Sign Up"}
                 </Link>
               </Grid>
@@ -118,7 +143,15 @@ export default function SignIn() {
            
           </Box>
         </Box>
-        <Copyright sx={{ mt: 6 }} />
+        <Copyright sx={{
+          mt: 3,
+
+          color: '#2ACAEA',
+
+          fontWeight: 'bold',
+          fontSize: '1rem'
+
+        }} />
       </Container>
     </ThemeProvider>
   );
