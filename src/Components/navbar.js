@@ -20,7 +20,7 @@ export default function SimpleBottomNavigation() {
       >
         <BottomNavigationAction label="Home" icon={<Homeicon />} />
         <BottomNavigationAction label="Events" icon={<CalendarTodayIcon />} />
-        <BottomNavigationAction label="Account" icon={<AccountBoxIcon />} />
+        <BottomNavigationAction label="Dads" icon={<AccountBoxIcon />} />
       </BottomNavigation>
     </Box>
   );

@@ -5,10 +5,12 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import BotNav from './Components/navbar';
+import TopBar from './Components/topBar';
 
 
 ReactDOM.render(
   <React.StrictMode>
+    <TopBar />
     <App />
     <BotNav />
   </React.StrictMode>,
