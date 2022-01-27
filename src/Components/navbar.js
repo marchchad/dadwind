@@ -4,7 +4,7 @@ import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import Homeicon from '@mui/icons-material/Home';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
-import AccountBoxIcon from '@mui/icons-material/AccountBox';
+// import AccountBoxIcon from '@mui/icons-material/AccountBox';
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
@@ -20,7 +20,7 @@ export default function SimpleBottomNavigation() {
       >
         <BottomNavigationAction label="Home" icon={<Homeicon />} />
         <BottomNavigationAction label="Events" icon={<CalendarTodayIcon />} />
-        <BottomNavigationAction label="Dads" icon={<AccountBoxIcon />} />
+        {/* <BottomNavigationAction label="Dads" icon={<AccountBoxIcon />} /> */}
       </BottomNavigation>
     </Box>
   );

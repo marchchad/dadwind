@@ -6,12 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import App from './App';
 import BotNav from './Components/navbar';
 import TopBar from './Components/topBar';
+import Filler from './Components/filler';
 
 
 ReactDOM.render(
   <React.StrictMode>
     <TopBar />
-    <App />
+    {/* <App /> */}
+    <Filler/>
     <BotNav />
   </React.StrictMode>,
   document.getElementById('root')
