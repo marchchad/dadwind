@@ -10,7 +10,11 @@ export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <Box sx={{position: 'fixed', bottom: 0, left: 0, right: 0 }}>
+    <Box sx={{
+      position: 'fixed',
+      bottom: 0,
+      left: 0,
+      right: 0}}>
       <BottomNavigation
         showLabels
         value={value}
@@ -18,9 +22,12 @@ export default function SimpleBottomNavigation() {
           setValue(newValue);
         }}
       >
-        <BottomNavigationAction label="Home" icon={<Homeicon />} />
-        <BottomNavigationAction label="Events" icon={<CalendarTodayIcon />} />
-        {/* <BottomNavigationAction label="Dads" icon={<AccountBoxIcon />} /> */}
+        <BottomNavigationAction label="Home" sx={{
+          color: 'primary',
+          fontSize: '1.5rem'}} icon={<Homeicon />} />
+        <BottomNavigationAction label="Calendar" sx={{
+          color: 'primary',
+          fontSize: '1.5rem'}} icon={<CalendarTodayIcon />} />
       </BottomNavigation>
     </Box>
   );

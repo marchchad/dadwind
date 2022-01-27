@@ -33,7 +33,7 @@ export default function AccountMenu() {
           <IconButton
             onClick={handleClick}
             size="small"
-            sx={{ ml: 2 , marginLeft: "auto", marginRight: "1em"}}
+            sx={{  marginLeft: "auto", marginRight: "1em", textAlign: "right"}}
             aria-controls={open ? 'account-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
